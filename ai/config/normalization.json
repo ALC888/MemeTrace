@@ -1,0 +1,11 @@
+{
+  "rule_version": "v0.2",
+  "remove_forward_prefix": true,
+  "remove_urls": true,
+  "remove_mentions": true,
+  "normalize_topics": true,
+  "collapse_repeat_punct": true,
+  "normalize_whitespace": true,
+  "token_pattern": "[\\u4e00-\\u9fff]+|[a-zA-Z0-9_]+",
+  "min_token_len": 2
+}

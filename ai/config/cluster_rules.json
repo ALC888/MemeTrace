@@ -1,0 +1,12 @@
+{
+  "rule_version": "v0.1",
+  "keyword_overlap_threshold": 0.5,
+  "vector_similarity_threshold": 0.75,
+  "alias_map": {
+    "某梗": [
+      "某梗变体",
+      "某梗缩写",
+      "某梗版本"
+    ]
+  }
+}

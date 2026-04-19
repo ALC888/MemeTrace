@@ -1,0 +1,18 @@
+{
+  "rule_version": "v0.1",
+  "top_source_candidates": 3,
+  "min_candidates": 2,
+  "probable_threshold": 0.7,
+  "uncertain_threshold": 0.5,
+  "platform_weights": {
+    "weibo": 1.0,
+    "bilibili": 0.95,
+    "douyin": 0.9
+  },
+  "score_weights": {
+    "time": 0.45,
+    "platform": 0.2,
+    "relevance": 0.2,
+    "representative": 0.15
+  }
+}

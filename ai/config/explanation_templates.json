@@ -1,0 +1,8 @@
+{
+  "rule_version": "v0.1",
+  "templates": {
+    "probable": "系统根据多平台证据判断，{name} 近期集中传播，疑似最早来源于 {platform}（{time}）。",
+    "uncertain": "系统检测到 {name} 存在传播趋势，但来源证据存在冲突，当前仅可判定为不确定。",
+    "insufficient_evidence": "{name} 已被识别为候选表达，但当前证据不足，暂无法给出可靠来源解释。"
+  }
+}
