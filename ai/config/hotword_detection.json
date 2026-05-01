@@ -1,0 +1,22 @@
+{
+  "rule_version": "v0.1",
+  "min_freq": 2,
+  "min_post_count": 2,
+  "min_score": 0.35,
+  "max_token_len": 10,
+  "top_n": 10,
+  "weights": {
+    "frequency": 0.5,
+    "burst": 0.3,
+    "cross_post": 0.2
+  },
+  "denylist": [
+    "今天",
+    "这个",
+    "真的",
+    "详情见",
+    "完整版",
+    "哈哈哈哈",
+    "笑死"
+  ]
+}

@@ -1,0 +1,7 @@
+.deps/
+.venv/
+__pycache__/
+*.pyc
+data/*.db
+data/*.pid
+data/pipeline_runs/

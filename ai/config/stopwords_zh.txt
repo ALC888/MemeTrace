@@ -1,0 +1,26 @@
+# Task 2 baseline stopwords
+# Keep this list short and explicit for demo reproducibility
+
+的
+了
+和
+是
+在
+也
+都
+就
+很
+太
+一个
+这个
+那个
+我们
+你们
+他们
+今天
+真的
+还有
+就是
+可以
+一下
+一下子
