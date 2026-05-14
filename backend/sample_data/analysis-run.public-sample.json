@@ -1,0 +1,69 @@
+{
+  "run_id": "run_backend_public_sample",
+  "generated_at": "2026-05-01T22:30:00+08:00",
+  "source_batch": {
+    "batch_id": "batch_backend_public_sample",
+    "source_type": "public_sample",
+    "platforms": ["bilibili", "weibo"],
+    "record_count": 2
+  },
+  "events": [
+    {
+      "id": "event_0001",
+      "name": "电子榨菜",
+      "aliases": ["电子榨菜", "下饭视频"],
+      "summary": "系统根据多平台证据判断，电子榨菜近期集中传播。",
+      "status": "complete",
+      "heat_score": 0.91,
+      "confidence": 0.84,
+      "first_seen_time": "2026-04-28T09:20:00+08:00",
+      "source_platform": "bilibili",
+      "source_confidence": 0.84,
+      "source_status": "probable",
+      "representative_evidence_id": "evi_0001_01",
+      "keyword_signals": [
+        {
+          "term": "电子榨菜",
+          "frequency": 7,
+          "burst_score": 0.72
+        }
+      ],
+      "explanation_status": "generated",
+      "notes": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evi_0001_01",
+      "event_id": "event_0001",
+      "raw_post_id": "raw_001",
+      "platform": "bilibili",
+      "snippet": "这期视频太适合吃饭看了，简直是我的电子榨菜。",
+      "post_time": "2026-04-28T09:20:00+08:00",
+      "url": "https://www.bilibili.com/video/demo-electronic-pickle",
+      "relevance_score": 1.0,
+      "source_score": 0.84,
+      "is_source_candidate": true,
+      "evidence_type": "timeline_anchor"
+    }
+  ],
+  "trend_snapshots": [
+    {
+      "id": "snap_0001",
+      "event_id": "event_0001",
+      "snapshot_time": "2026-04-28T20:00:00+08:00",
+      "heat_value": 0.95,
+      "platform_breakdown": {
+        "bilibili": 0.7,
+        "weibo": 0.3
+      },
+      "sample_count": 1
+    }
+  ],
+  "stats": {
+    "raw_post_count": 2,
+    "normalized_post_count": 2,
+    "candidate_term_count": 4,
+    "event_count": 1
+  }
+}

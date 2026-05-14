@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+backend/.deps/
+backend/.venv/
+backend/data/*.db
+backend/data/*.pid
+backend/data/pipeline_runs/
+backend/data/analysis-run.latest.json
