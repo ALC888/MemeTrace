@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .schemas import (
     HealthResponse,
+    HotEventDetail,
     HotEventListResponse,
     ReanalyzeRequest,
     ReanalyzeResponse,
@@ -56,8 +57,8 @@ def hot_events(
     return HotEventListResponse(items=items, total=total)
 
 
-@app.get("/api/hot-events/{event_id}")
-def hot_event_detail(event_id: str):
+@app.get("/api/hot-events/{event_id}", response_model=HotEventDetail)
+def hot_event_detail(event_id: str) -> HotEventDetail:
     return get_hot_event(event_id)
 
 

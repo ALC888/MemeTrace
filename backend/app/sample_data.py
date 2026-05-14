@@ -6,7 +6,7 @@ DEMO_ANALYSIS_RUN = {
     "generated_at": "2026-05-01T22:30:00+08:00",
     "source_batch": {
         "batch_id": "batch_backend_demo_seed",
-        "source_type": "local_sample",
+        "source_type": "public_sample",
         "platforms": ["bilibili", "douyin", "weibo"],
         "record_count": 9,
     },

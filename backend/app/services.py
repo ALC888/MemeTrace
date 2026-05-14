@@ -15,7 +15,7 @@ from .schemas import (
     TimelineNode,
     TrendSnapshotItem,
 )
-from .settings import PIPELINE_FINAL_OUTPUT, PIPELINE_OUT_DIR, REPO_ROOT
+from .settings import AI_PIPELINE_SCRIPT, PIPELINE_FINAL_OUTPUT, PIPELINE_OUT_DIR, REPO_ROOT
 from .storage import (
     decode_json,
     event_count,
@@ -206,6 +206,16 @@ def resolve_repo_path(path_value: str) -> Path:
 
 
 def run_ai_pipeline(input_path: str, final_output_path: str | None = None) -> tuple[int, Path]:
+    if not AI_PIPELINE_SCRIPT.exists():
+        raise HTTPException(
+            status_code=500,
+            detail=(
+                "AI pipeline script not found. Expected "
+                f"{AI_PIPELINE_SCRIPT}. Set MEMETRACE_REPO_ROOT to the project root "
+                "that contains ai/pipeline/run_full_pipeline.py."
+            ),
+        )
+
     source = resolve_repo_path(input_path)
     if not source.exists():
         raise HTTPException(status_code=400, detail=f"input_path does not exist: {input_path}")
@@ -216,7 +226,7 @@ def run_ai_pipeline(input_path: str, final_output_path: str | None = None) -> tu
 
     cmd = [
         sys.executable,
-        str(REPO_ROOT / "ai" / "pipeline" / "run_full_pipeline.py"),
+        str(AI_PIPELINE_SCRIPT),
         "--input",
         str(source),
         "--out-dir",
@@ -229,5 +239,9 @@ def run_ai_pipeline(input_path: str, final_output_path: str | None = None) -> tu
         detail = completed.stderr.strip() or completed.stdout.strip() or "AI pipeline failed"
         raise HTTPException(status_code=500, detail=detail)
 
-    count = import_analysis_run(load_json_file(output))
+    try:
+        count = import_analysis_run(load_json_file(output))
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=f"Invalid analysis-run output: {exc}") from exc
+
     return count, output
