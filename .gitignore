@@ -6,3 +6,4 @@ backend/data/*.db
 backend/data/*.pid
 backend/data/pipeline_runs/
 backend/data/analysis-run.latest.json
+sample_data/out/

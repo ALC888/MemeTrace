@@ -36,6 +36,12 @@ C:\Users\29569\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\p
 
 运行产物只放在 `backend/data/` 下，并已加入 `.gitignore`；仓库内保留的结构化演示样例是 `backend/sample_data/analysis-run.public-sample.json`。
 
+可直接导入已有 `analysis-run` 文件：
+
+```bash
+python backend/scripts/import_analysis_run.py --input backend/sample_data/analysis-run.public-sample.json
+```
+
 ## 后端与 AI 目录约定
 
 后端以后统一以“同时包含 `backend/` 与 `ai/` 的项目根目录”为仓库根目录。默认情况下，后端会把 `backend/..` 识别为 `REPO_ROOT`，并要求下面这个脚本真实存在：
@@ -87,6 +93,6 @@ $env:MEMETRACE_REPO_ROOT\ai\pipeline\run_full_pipeline.py
 
 ```json
 {
-  "input_path": "sample_data/processed/raw-posts.task2.input.json"
+  "input_path": "sample_data/raw-posts.public-sample.json"
 }
 ```

@@ -7,9 +7,9 @@
 ## 运行方式
 ```bash
 python ai/pipeline/run_full_pipeline.py \
-  --input sample_data/processed/raw-posts.task2.input.json \
-  --out-dir sample_data/processed/fullrun \
-  --final-output sample_data/processed/analysis-run.task6.output.json
+  --input sample_data/raw-posts.public-sample.json \
+  --out-dir sample_data/out/fullrun \
+  --final-output sample_data/out/analysis-run.public-sample.json
 ```
 
 ## 产物
