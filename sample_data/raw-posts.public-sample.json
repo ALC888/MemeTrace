@@ -1,0 +1,116 @@
+[
+  {
+    "id": "raw_0001",
+    "platform": "weibo",
+    "title": "某梗开始刷屏",
+    "content": "转发微博：#某梗# 今天刷到：某梗。评论区已经开始学：某梗变体！@热榜小助手 https://weibo.example/demo/1",
+    "author": "热榜观察员",
+    "publish_time": "2026-05-01T09:00:00+08:00",
+    "crawl_time": "2026-05-01T09:05:00+08:00",
+    "url": "https://weibo.example/demo/1",
+    "metrics": {
+      "like_count": 1200,
+      "comment_count": 320,
+      "share_count": 180,
+      "view_count": 56000
+    },
+    "extra": {
+      "topic_tags": ["某梗", "某梗变体"]
+    }
+  },
+  {
+    "id": "raw_0002",
+    "platform": "bilibili",
+    "title": "某梗变体合集",
+    "content": "这个视频把：某梗变体，玩明白了。弹幕全在刷：某梗，真的停不下来。",
+    "author": "站内剪辑手",
+    "publish_time": "2026-05-01T10:10:00+08:00",
+    "crawl_time": "2026-05-01T10:15:00+08:00",
+    "url": "https://bilibili.example/demo/2",
+    "metrics": {
+      "like_count": 980,
+      "comment_count": 260,
+      "share_count": 120,
+      "view_count": 43000
+    },
+    "extra": {
+      "topic_tags": ["某梗"]
+    }
+  },
+  {
+    "id": "raw_0003",
+    "platform": "douyin",
+    "title": "某梗热度上升",
+    "content": "某梗 今天又火了。某梗变体 已经开始刷屏，连同事都在学这个梗。",
+    "author": "短视频搬运站",
+    "publish_time": "2026-05-01T11:30:00+08:00",
+    "crawl_time": "2026-05-01T11:35:00+08:00",
+    "url": "https://douyin.example/demo/3",
+    "metrics": {
+      "like_count": 860,
+      "comment_count": 210,
+      "share_count": 98,
+      "view_count": 39000
+    },
+    "extra": {
+      "topic_tags": ["某梗", "热点梗"]
+    }
+  },
+  {
+    "id": "raw_0004",
+    "platform": "weibo",
+    "title": "某梗冲上热搜",
+    "content": "#某梗# 某梗变体 冲上热搜。大家都在说：某梗。甚至开始总结：某梗版本。",
+    "author": "娱乐速递",
+    "publish_time": "2026-05-01T14:20:00+08:00",
+    "crawl_time": "2026-05-01T14:25:00+08:00",
+    "url": "https://weibo.example/demo/4",
+    "metrics": {
+      "like_count": 1500,
+      "comment_count": 410,
+      "share_count": 240,
+      "view_count": 71000
+    },
+    "extra": {
+      "topic_tags": ["某梗", "某梗版本"]
+    }
+  },
+  {
+    "id": "raw_0005",
+    "platform": "bilibili",
+    "title": "某梗版本出现",
+    "content": "新投稿里连：某梗版本，都来了。弹幕还在继续刷：某梗。某梗变体 越来越多。",
+    "author": "弹幕观察所",
+    "publish_time": "2026-05-01T16:10:00+08:00",
+    "crawl_time": "2026-05-01T16:12:00+08:00",
+    "url": "https://bilibili.example/demo/5",
+    "metrics": {
+      "like_count": 760,
+      "comment_count": 190,
+      "share_count": 85,
+      "view_count": 30000
+    },
+    "extra": {
+      "topic_tags": ["某梗", "某梗变体"]
+    }
+  },
+  {
+    "id": "raw_0006",
+    "platform": "douyin",
+    "title": "某梗出圈",
+    "content": "笑死，某梗缩写 都出来了。某梗 彻底出圈。某梗变体 已经成了评论区暗号。",
+    "author": "热点追踪器",
+    "publish_time": "2026-05-01T18:00:00+08:00",
+    "crawl_time": "2026-05-01T18:03:00+08:00",
+    "url": "https://douyin.example/demo/6",
+    "metrics": {
+      "like_count": 930,
+      "comment_count": 240,
+      "share_count": 110,
+      "view_count": 41000
+    },
+    "extra": {
+      "topic_tags": ["某梗", "某梗缩写"]
+    }
+  }
+]
